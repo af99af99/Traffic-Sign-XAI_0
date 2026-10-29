@@ -44,12 +44,13 @@ The training data was split into 80% for training and 20% for validation. The te
 
 Test set performance:
 
-| Model              | Accuracy |
-|--------------------|----------|
-| LeNet-5            | 97.56%   |
-| EfficientNetV2-S   | 79.71%   |
-| MobileNetV2        | 64.06%   |
-| Sequential CNN     | 61.37%   |
+
+| Model            | Accuracy | Weighted F1-Score | Inference Time     |
+|------------------|----------|-------------------|--------------------|
+| LeNet-5          | 97.56%   | 0.9755            | 2.11 ms (GPU)      |
+| EfficientNetV2-S | 79.71%   | 0.7818            | 19.96 ms (GPU)     |
+| MobileNetV2      | 64.06%   | 0.6562            | 71.99 ms (CPU)     |
+| Sequential CNN   | 61.37%   | 0.6116            | 63.98 ms (CPU)     |
 
 LeNet-5 achieved the highest classification accuracy on this dataset.  
 EfficientNetV2-S showed relatively higher attention consistency among the models evaluated with Grad-CAM.
